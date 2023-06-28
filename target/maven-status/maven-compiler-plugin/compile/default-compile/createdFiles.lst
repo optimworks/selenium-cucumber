@@ -1,0 +1,12 @@
+com\trello\locators\BoardPageLocators.class
+com\trello\locators\LoginPageLocators.class
+com\trello\pages\LogOutPage.class
+com\trello\locators\CreatedBoardPageLocators.class
+com\trello\pages\BoardsPage.class
+com\trello\pages\LoginPage.class
+com\trello\base\BaseClass.class
+com\trello\locators\HomePageLocators.class
+com\trello\locators\LogOutPageLocators.class
+com\trello\pages\CreatedBoardPage.class
+com\trello\utilities\GlobalVariables.class
+com\trello\pages\HomePage.class
