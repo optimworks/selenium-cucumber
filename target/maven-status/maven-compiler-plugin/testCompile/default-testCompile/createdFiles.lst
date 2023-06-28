@@ -1,0 +1,10 @@
+stepsdefinition\BoardsPageSteps.class
+stepsdefinition\CreatedBoardPageSteps.class
+runner\TestRunCuke.class
+stepsdefinition\BaseClass.class
+runner\TestRunCuke2.class
+stepsdefinition\BrowserSteps.class
+stepsdefinition\LoginPageSteps.class
+stepsdefinition\LogOutPageSteps.class
+runner\RunJUnit.class
+runner\TestRunCuke3.class
