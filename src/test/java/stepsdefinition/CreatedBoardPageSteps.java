@@ -126,6 +126,20 @@ public class CreatedBoardPageSteps {
 	}
 	
 	
+	@And("user drags cards to {string}")
+	public void user_drags_cards_to(String sListName, io.cucumber.datatable.DataTable dataTable) {
+		cards = dataTable.asList();
+		board.dragAndDropCards(sListName, cards);
+	}
 	
+	@And("user clicks on Add another list")
+	public void user_clicks_on_add_another_list() {
+	    board.clickOnAddAnotherList();
+	}
+	
+	@And("user enters another listname {string}")
+	public void user_enters_another_listname(String sListName) {
+	   board.enterAnotherListTitle(sListName);
+	}
 
 }
