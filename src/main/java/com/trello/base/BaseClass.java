@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -20,6 +21,7 @@ public class BaseClass {
     public  static WebElement wbElement;
     public  static String screenshotPath;
 	public  static String screenshotName;
+	private static Actions act;
    
     public  void loadConfig() {
     	try {
@@ -104,4 +106,11 @@ public class BaseClass {
 		}
 	}
 
+	public static void dragAndDrop(WebDriver wDriver, WebElement objLocatorSource, WebElement objLocatorDestination) {
+		//WebElement wbElementSource = Elements.getWebElement(wDriver, objLocatorSource);
+		//WebElement wbElementDestination = Elements.getWebElement(wDriver, objLocatorDestination);
+		act = new Actions(wDriver);
+		act.dragAndDrop(objLocatorSource, objLocatorDestination);
+		act.perform();
+}
 }

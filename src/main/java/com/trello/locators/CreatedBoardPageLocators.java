@@ -17,4 +17,5 @@ public class CreatedBoardPageLocators {
 	public static By btnClose = By.xpath("//input[@value='Close']");
 	public static By lnkPermanentlyDelete = By.xpath("//button[contains(text(),'Permanently delete board')]");
 	public static By btnDelete = By.xpath("//button[text()='Delete']");
+	public static By btnAddAnotherList = By.xpath("//span[contains(text(),'Add another list')]/..");
 }

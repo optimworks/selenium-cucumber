@@ -190,6 +190,20 @@ public class CreatedBoardPage extends BaseClass{
 		click(driver,CreatedBoardPageLocators.btnDelete);
 	}
 	
+	public void dragAndDropCards(String listTitle, List<String> cardTitle) {
+		for (int j=0; j<cardTitle.size(); j++) {
+			WebElement wbListTitle = driver.findElement(By.xpath("//*[text()='"+listTitle+"']/ancestor::div[contains(@class,'list-content')]"));
+			WebElement wbCard = driver.findElement(By.xpath("//*[text()='"+cardTitle.get(j)+"']/ancestor::a[contains(@class,'js-member-droppable')]"));
+			dragAndDrop(driver, wbCard, wbListTitle);
+		}
+	}
+	
+	public void clickOnAddAnotherList() {
+		waitForElementVisibility(driver,CreatedBoardPageLocators.btnAddAnotherList, GlobalVariables.shortwait);
+		waitForElementClickable(driver,CreatedBoardPageLocators.btnAddAnotherList, GlobalVariables.shortwait);
+		click(driver,CreatedBoardPageLocators.btnAddAnotherList);
+	}
+	
 	
 	
 	
